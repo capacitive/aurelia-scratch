@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"title": "Star Wars",
+		"releaseYear": 1977
+	},
+	{
+		"id": 11,
+		"title": "Star Trek: The Motion Picture",
+		"releaseYear": 1979
+	},
+	{
+		"id": 21,
+		"title": "Shrek",
+		"releaseYear": 2004
+	}
+]

@@ -1,0 +1,11 @@
+<template>
+	<!-- <require from="./resources/nav-menu"></require> -->
+	<nav-menu router.bind="router"></nav-menu>
+
+	<div class="container" show.bind="router.isNavigating">
+		<i class="class fa fa-spinner fa-spin"></i>
+	</div>
+	<router-view></router-view>
+
+	<compose view-model="currentDate"></compose>
+</template>

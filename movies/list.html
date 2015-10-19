@@ -1,0 +1,30 @@
+<template>
+	<div class="container">
+			<table class="table">
+			<tr>
+				<th>Title</th>
+				<th>Year</th>
+			</tr>
+			<tr repeat.for="movie of movies">
+				<td>${movie.title}</td>
+				<td>${movie.releaseYear}</td>
+				<td>
+					<div style="background-image: url(/images/burton.jpg);"></div>
+				</td>
+				<td>
+					<a route-href="route:details; params.bind:{id:movie.id}"
+						class="btn btn-default">Details</a>
+				</td>
+				<td>
+					<a route-href="route:edit; params.bind:{id:movie.id}"
+						class="btn btn-default">Edit</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div>You have ${movies.length} movies.</div>
+	<!--<div>${message}</div>
+	<!--simple two-way binding:-->
+	<!--<button click.trigger="changeMessage()">Change Message</button>-->
+
+</template>
